@@ -1,0 +1,8 @@
+spring:
+  data:
+    cassandra:
+      keyspace-name: tacocloud
+      schema-action: recreate
+      local-datacenter: datacenter1
+      username: tacocloud
+      password: s3cr3tP455w0rd
