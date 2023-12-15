@@ -28,7 +28,7 @@ public class TacoController {
         this.tacoRepo = tacoRepo;
     }
 
-    @GetMapping(params = "recent")
+    @GetMapping("/recent")
     public Iterable<Taco> recentTacos() {                 //<3>
         PageRequest page = PageRequest.of(
                 0, 12, Sort.by("createdAt").descending());
